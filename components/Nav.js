@@ -52,16 +52,16 @@ const nav = () => {
 
   <ul className="navbar-nav flex flex-col pl-0 list-style-none mr-auto">
     <li className="nav-item p-2">
-      <a className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0" href="#">AJ Things</a>
+      <a className="nav-link text-sky-500 hover:text-sky-800 focus:text-gray-700 p-0" href="#">AJ Things</a>
     </li>
     <li className="nav-item p-2">
-      <a className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0" href="#">Products</a>
+      <a className="nav-link text-sky-500 hover:text-sky-700 focus:text-gray-700 p-0" href="#">Products</a>
     </li>
     <li className="nav-item p-2">
-      <a className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0" href="#">Blog</a>
+      <a className="nav-link text-sky-500 hover:text-sky-700 focus:text-gray-700 p-0" href="#">Blog</a>
     </li>
     <li className="nav-item p-2">
-      <a className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0" href="#">Contacts</a>
+      <a className="nav-link text-sky-500 hover:text-sky-700 focus:text-gray-700 p-0" href="#">Contacts</a>
     </li>
 
   </ul>

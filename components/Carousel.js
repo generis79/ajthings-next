@@ -33,7 +33,7 @@ const Carousel = () => {
         alt="..."
       />
       <div className="carousel-caption hidden md:block absolute text-center">
-        <h5 className="text-xl">Key chains</h5>
+        <h5 className="text-xl text-sky-500">Key chains</h5>
         <p>Add extra flavour to your style</p>
       </div>
     </div>
@@ -44,8 +44,8 @@ const Carousel = () => {
         alt="..."
       />
       <div className="carousel-caption hidden md:block absolute text-center">
-        <h5 className="text-xl">Scrunchies</h5>
-        <p>Add style to your look</p>
+        <h5 className="text-xl text-sky-500">Scrunchies</h5>
+        <p>Add style to your excelence</p>
       </div>
     </div>
     <div className="carousel-item relative float-left w-full">
@@ -55,7 +55,7 @@ const Carousel = () => {
         alt="..."
       />
       <div className="carousel-caption hidden md:block absolute text-center">
-        <h5 className="text-xl">Leotards</h5>
+        <h5 className="text-xl text-sky-500">Leotards</h5>
         <p>Add excelence to your performance</p>
       </div>
     </div>
