@@ -9,14 +9,15 @@ const nav = () => {
   items-center
   justify-between
   py-4
-  bg-gray-100
+  bg-white
   text-gray-500
   hover:text-gray-700
   focus:text-gray-700
   shadow-lg
   navbar navbar-expand-lg navbar-light
   ">
-  <div className="container-fluid w-full flex flex-wrap items-center justify-between px-6">
+
+  <div className="container-fluid w-full flex flex-wrap items-center justify-between px-6 bg-red-50 ">
   <button className="
       navbar-toggler
       text-gray-500
@@ -50,20 +51,22 @@ const nav = () => {
       loading="lazy" />
   </a>
 
-  <ul className="navbar-nav flex flex-col pl-0 list-style-none mr-auto">
+  <ul className="navbar-nav flex flex-col pl-0 list-style-none mr-auto ">
     <li className="nav-item p-2">
-      <a className="nav-link text-sky-500 hover:text-sky-800 focus:text-gray-700 p-0" href="#">AJ Things</a>
+      <a className="nav-link text-sky-700 hover:text-sky-800 focus:text-gray-700 p-0" href="/">AJ Things</a>
     </li>
     <li className="nav-item p-2">
-      <a className="nav-link text-sky-500 hover:text-sky-700 focus:text-gray-700 p-0" href="#">Products</a>
+      <a className="nav-link text-sky-700 hover:text-sky-700 focus:text-gray-700 p-0" href="/products">Products</a>
     </li>
     <li className="nav-item p-2">
-      <a className="nav-link text-sky-500 hover:text-sky-700 focus:text-gray-700 p-0" href="#">Blog</a>
+      <a className="nav-link text-sky-700 hover:text-sky-700 focus:text-gray-700 p-0" href="blog">Blog</a>
     </li>
     <li className="nav-item p-2">
-      <a className="nav-link text-sky-500 hover:text-sky-700 focus:text-gray-700 p-0" href="#">Contacts</a>
+      <a className="nav-link text-sky-700 hover:text-sky-700 focus:text-gray-700 p-0" href="about">About</a>
     </li>
-
+    <li className="nav-item p-2">
+      <a className="nav-link text-sky-700 hover:text-sky-700 focus:text-gray-700 p-0" href="contacts">Contacts</a>
+    </li>
   </ul>
 
   </div>
@@ -71,7 +74,7 @@ const nav = () => {
 
   <div className="flex items-center relative">
 
-  <a className="text-gray-500 hover:text-gray-700 focus:text-gray-700 mr-4" href="#">
+  <a className="text-sky-500 hover:text-gray-700 focus:text-gray-700 mr-4" href="#">
     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart"
       className="w-4" role="img" xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 576 512">
@@ -82,7 +85,7 @@ const nav = () => {
   </a>
   <div className="dropdown relative">
     <a className="
-          text-gray-500
+          text-sky-500
           hover:text-gray-700
           focus:text-gray-700
           mr-4
@@ -102,8 +105,7 @@ const nav = () => {
       dropdown-menu
       min-w-max
       absolute
-      hidden
-      bg-white
+      bg-sky-50
       text-base
       z-50
       float-left
@@ -177,8 +179,7 @@ const nav = () => {
     dropdown-menu
     min-w-max
     absolute
-    hidden
-    bg-white
+    bg-sky-50
     text-base
     z-50
     float-left

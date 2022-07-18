@@ -4,7 +4,7 @@ import ProductList from './ProductList'
 const Products = () => {
   return (
     <div>
-        <div className='flex flex-col items-center'>
+        <div className='flex flex-col items-center bg-white'>
 
 
 

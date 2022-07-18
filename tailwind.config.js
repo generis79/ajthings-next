@@ -6,7 +6,9 @@ module.exports = {
     './node_modules/tw-elements/dist/js/**/*.js'],
   theme: {
     extend: {
-
+      fontFamily: {
+        Caveat: ["Caveat", "cursive"],
+       },
 
 
     },

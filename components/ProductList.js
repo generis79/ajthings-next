@@ -4,13 +4,13 @@ import ProductCard from './ProductCard'
 const ProductList = () => {
   return (
     <div>
-    <div className='flex flex-auto flex-wrap mx-24 my-5'>
-        <ProductCard product="product1"/>
-        <ProductCard product="product2"/>        
-        <ProductCard product="product3"/>
-        <ProductCard product="product4"/>
-        <ProductCard product="product5"/>
-        <ProductCard product="product6"/>
+    <div className='flex flex-auto flex-wrap grow shrink justify-center my-5'>
+        <ProductCard product="Leather key chains"/>
+        <ProductCard product="Acrylic key chains"/>        
+        <ProductCard product="Scrunchies"/>
+        <ProductCard product="Stickers"/>
+        <ProductCard product="Clay beads bracelets"/>
+        <ProductCard product="Wristles"/>
     </div>
     </div>
   )
