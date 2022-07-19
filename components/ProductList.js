@@ -1,19 +1,18 @@
 import React from 'react'
 import ProductCard from './ProductCard'
 
-const ProductList = () => {
+const ProductList = ({products}) => {
+  //console.log(products)
   return (
     <div>
     <div className='flex flex-auto flex-wrap grow shrink justify-center my-5'>
-        <ProductCard product="Leather key chains"/>
-        <ProductCard product="Acrylic key chains"/>        
-        <ProductCard product="Scrunchies"/>
-        <ProductCard product="Stickers"/>
-        <ProductCard product="Clay beads bracelets"/>
-        <ProductCard product="Wristles"/>
+        {products.map((product, index) => (
+          <ProductCard key ={index} product={product}/>
+        ))}
     </div>
     </div>
   )
 }
 
 export default ProductList
+
