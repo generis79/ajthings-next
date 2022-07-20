@@ -18,7 +18,7 @@ const nav = () => {
   navbar navbar-expand-lg navbar-light
   ">
 
-  <div className="container-fluid w-full flex flex-wrap items-center justify-between px-6 bg-red-50 ">
+  <div className="container-fluid w-full flex flex-wrap items-center justify-between px-6 bg-gray-100 ">
   <button className="
       navbar-toggler
       text-gray-500
