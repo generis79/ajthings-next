@@ -16,7 +16,7 @@ const handleSubmit = async (event) => {
     message: event.target.message.value
   }
   console.log(data)
-   API.get(contactusAPI, path)
+   API.post(contactusAPI, path, data)
      .then(response => {
        console.log(response)
      })
