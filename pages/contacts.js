@@ -11,9 +11,11 @@ const path = "/contactus"
 const handleSubmit = async (event) => {
   event.preventDefault()
   const data = {
-    name: event.target.name.value,
-    email: event.target.email.value,
-    message: event.target.message.value
+    body: {
+          name: event.target.name.value,
+          email: event.target.email.value,
+          message: event.target.message.value
+        }
   }
   console.log(data)
    API.post(contactusAPI, path, data)
