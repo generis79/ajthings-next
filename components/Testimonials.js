@@ -20,7 +20,7 @@ const Testimonials = () => {
             <div className="block rounded-lg shadow-lg bg-white">
               <div
                 className="overflow-hidden rounded-t-lg h-28"
-                style={{ "background-color": "#9d789b" }}
+                style={{ "backgroundColor": "#9d789b" }}
               ></div>
               <div className="w-24 -mt-12 overflow-hidden border-2 border-white rounded-full mx-auto bg-white">
                 <img
@@ -57,7 +57,7 @@ const Testimonials = () => {
             <div className="block rounded-lg shadow-lg bg-white">
               <div
                 className="overflow-hidden rounded-t-lg h-28"
-                style={{ "background-color": "#7a81a8" }}
+                style={{ "backgroundColor": "#7a81a8" }}
               ></div>
               <div className="w-24 -mt-12 overflow-hidden border-2 border-white rounded-full mx-auto bg-white">
                 <img
@@ -94,7 +94,7 @@ const Testimonials = () => {
             <div className="block rounded-lg shadow-lg bg-white">
               <div
                 className="overflow-hidden rounded-t-lg h-28"
-                style={{ "background-color": "#6d5b98" }}
+                style={{ "backgroundColor": "#6d5b98" }}
               ></div>
               <div className="w-24 -mt-12 overflow-hidden border-2 border-white rounded-full mx-auto bg-white">
                 <img

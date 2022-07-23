@@ -1,6 +1,10 @@
 import React from 'react'
 import Carousel from '../components/Carousel'
 
+function sendContactUs({name,email,message}) {
+  console.log(name,email,message)
+}
+
 const contacts = () => {
   return (
     <div>
@@ -23,7 +27,7 @@ const contacts = () => {
         <p className="text-gray-500 mb-2">info@gmail.com</p>
       </div>
       <div className="grow-0 shrink-0 basis-auto mb-12 md:mb-0 w-full md:w-6/12 px-3 lg:px-6">
-        <form>
+        <form action="/api/apicontactus" method='post' >
           <div className="form-group mb-6">
             <input type="text" className="form-control block
               w-full
@@ -38,7 +42,7 @@ const contacts = () => {
               transition
               ease-in-out
               m-0
-              focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7"
+              focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="name"
               placeholder="Name"/>
           </div>
           <div className="form-group mb-6">
@@ -55,7 +59,7 @@ const contacts = () => {
               transition
               ease-in-out
               m-0
-              focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput8"
+              focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="email"
               placeholder="Email address"/>
           </div>
           <div className="form-group mb-6">
@@ -75,7 +79,7 @@ const contacts = () => {
               ease-in-out
               m-0
               focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-            " id="exampleFormControlTextarea13" rows="3" placeholder="Message"></textarea>
+            " id="message" rows="3" placeholder="Message"></textarea>
           </div>
           <div className="form-group form-check text-center mb-6">
           <input type="checkbox"
@@ -84,7 +88,8 @@ const contacts = () => {
             <label className="form-check-label inline-block text-gray-800">Send me a copy of this
               message</label>
           </div>
-          <button type="submit" className="
+          <button type="submit" 
+          className="
             w-full
             px-6
             py-2.5

@@ -5,5 +5,28 @@
       "type": "cicd",
       "lastPushTimeStamp": "2022-07-10T08:45:17.357Z"
     }
+  },
+  "function": {
+    "contactus": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "api": {
+    "apicontactus": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "contactus",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ]
+    }
   }
 }

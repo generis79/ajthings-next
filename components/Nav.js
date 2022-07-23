@@ -48,7 +48,7 @@ const nav = () => {
         lg:mt-0
         mr-1
       " href="#">
-    <img src="./img/logo32.svg" style={{height: "32px"}} alt=""
+    <img src="/img/logo32.svg" style={{height: "32px"}} alt=""
       loading="lazy" />
   </Link> 
 
@@ -60,13 +60,13 @@ const nav = () => {
        <Link className="nav-link text-sky-700 hover:text-sky-700 focus:text-gray-700 p-0" href="/products">Products</Link> 
     </li>
     <li className="nav-item p-2">
-       <Link className="nav-link text-sky-700 hover:text-sky-700 focus:text-gray-700 p-0" href="blog">Blog</Link> 
+       <Link className="nav-link text-sky-700 hover:text-sky-700 focus:text-gray-700 p-0" href="/blog">Blog</Link> 
     </li>
     <li className="nav-item p-2">
-       <Link className="nav-link text-sky-700 hover:text-sky-700 focus:text-gray-700 p-0" href="about">About</Link> 
+       <Link className="nav-link text-sky-700 hover:text-sky-700 focus:text-gray-700 p-0" href="/about">About</Link> 
     </li>
     <li className="nav-item p-2">
-       <Link className="nav-link text-sky-700 hover:text-sky-700 focus:text-gray-700 p-0" href="contacts">Contacts</Link> 
+       <Link className="nav-link text-sky-700 hover:text-sky-700 focus:text-gray-700 p-0" href="/contacts">Contacts</Link> 
     </li>
   </ul>
 

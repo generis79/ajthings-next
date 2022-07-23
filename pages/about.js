@@ -18,6 +18,7 @@ const about = () => {
                   <img
                     src="https://mdbootstrap.com/img/new/avatars/6.jpg"
                     className="w-full rounded-t-lg"
+                    alt="avatar"
                   />
                   <Link href="#!">
                     <a>
@@ -93,6 +94,7 @@ const about = () => {
                   <img
                     src="https://mdbootstrap.com/img/new/avatars/8.jpg"
                     className="w-full rounded-t-lg"
+                    alt="avatar"
                   />
                   <a href="#!">
                     <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
@@ -160,6 +162,7 @@ const about = () => {
                   <img
                     src="https://mdbootstrap.com/img/new/avatars/15.jpg"
                     className="w-full rounded-t-lg"
+                    alt="avatar"
                   />
                   <a href="#!">
                     <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
