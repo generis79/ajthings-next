@@ -1,9 +1,9 @@
 import React from 'react'
 import Carousel from '../components/Carousel'
-//import Amplify, {API, Auth} from 'aws-amplify'
-// import awsconfig from '../src/aws-exports'
-// Amplify.configure(awsconfig)
-// Auth.configure(awsconfig);
+import Amplify, {API, Auth} from 'aws-amplify'
+import awsconfig from '../src/aws-exports'
+Amplify.configure(awsconfig)
+Auth.configure(awsconfig);
 
 const contactusAPI = "apicontactus"
 const path = "/contactus"
@@ -16,13 +16,13 @@ const handleSubmit = async (event) => {
     message: event.target.message.value
   }
   console.log(data)
-  // API.post(contactusAPI, path, data)
-  //   .then(response => {
-  //     console.log(response)
-  //   })
-  //   .catch(error =>{
-  //     console.log(error)
-  //   })
+   API.post(contactusAPI, path, data)
+     .then(response => {
+       console.log(response)
+     })
+     .catch(error =>{
+       console.log(error)
+     })
 }
 
 const contacts = () => {
