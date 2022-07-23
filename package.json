@@ -8,6 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "aws-amplify": "^4.3.28",
+    "aws-sdk": "^2.1181.0",
     "gray-matter": "^4.0.3",
     "marked": "^4.0.18",
     "next": "12.2.2",

@@ -1,8 +1,28 @@
 import React from 'react'
 import Carousel from '../components/Carousel'
+//import Amplify, {API, Auth} from 'aws-amplify'
+// import awsconfig from '../src/aws-exports'
+// Amplify.configure(awsconfig)
+// Auth.configure(awsconfig);
 
-function sendContactUs({name,email,message}) {
-  console.log(name,email,message)
+const contactusAPI = "apicontactus"
+const path = "/contactus"
+
+const handleSubmit = async (event) => {
+  event.preventDefault()
+  const data = {
+    name: event.target.name.value,
+    email: event.target.email.value,
+    message: event.target.message.value
+  }
+  console.log(data)
+  // API.post(contactusAPI, path, data)
+  //   .then(response => {
+  //     console.log(response)
+  //   })
+  //   .catch(error =>{
+  //     console.log(error)
+  //   })
 }
 
 const contacts = () => {
@@ -27,7 +47,7 @@ const contacts = () => {
         <p className="text-gray-500 mb-2">info@gmail.com</p>
       </div>
       <div className="grow-0 shrink-0 basis-auto mb-12 md:mb-0 w-full md:w-6/12 px-3 lg:px-6">
-        <form action="/api/apicontactus" method='post' >
+        <form onSubmit={handleSubmit} >
           <div className="form-group mb-6">
             <input type="text" className="form-control block
               w-full
