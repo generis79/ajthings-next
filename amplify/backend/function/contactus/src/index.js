@@ -2,12 +2,12 @@ console.log("Loading function");
 var AWS = require("aws-sdk");
 
 exports.handler = function(event, context) {
-    var eventText = JSON.stringify(event, null, 2);
+    var eventText = JSON.stringify(event.body, null, 2);
     console.log("Received event:", eventText);
     var sns = new AWS.SNS();
     var params = {
         Message: eventText, 
-        Subject: "AJ Things. Contact us request",
+        Subject: "Contact us",
         TopicArn: "arn:aws:sns:ap-southeast-2:987867815164:contactus"
     };
     sns.publish(params, function(err, data) {
