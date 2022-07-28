@@ -16,7 +16,6 @@ export default function Home({ collections }) {
       <meta name="keywords" content="portfolio, retail" />
 
       <Header />
-      <Hero />
       <Collections collections={collections} />
       <Testimonials />
     </div>

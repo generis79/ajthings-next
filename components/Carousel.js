@@ -28,35 +28,35 @@ const Carousel = () => {
   <div className="carousel-inner relative w-full overflow-hidden">
     <div className="carousel-item active relative float-left w-full">
       <img
-        src="/img/header.jpg"
+        src="/img/header_1.jpg"
         className="block w-full"
         alt="..."
       />
       <div className="carousel-caption hidden md:block absolute text-center">
-        <h5 className="text-xl text-sky-900 italic">Key chains</h5>
-        <p>Add extra flavour to your style</p>
+        <h5 className="text-xl text-sky-900 italic"></h5>
+        <p></p>
       </div>
     </div>
     <div className="carousel-item relative float-left w-full">
       <img
-        src="/img/header.jpg"
+        src="/img/header_2.jpg"
         className="block w-full"
         alt="..."
       />
       <div className="carousel-caption hidden md:block absolute text-center">
-        <h5 className="text-xl text-sky-900 italic">Scrunchies</h5>
-        <p>Add style to your excelence</p>
+        <h5 className="text-xl text-sky-900 italic"></h5>
+        <p></p>
       </div>
     </div>
     <div className="carousel-item relative float-left w-full">
       <img
-        src="/img/header.jpg"
+        src="/img/header_3.jpg"
         className="block w-full"
         alt="..."
       />
       <div className="carousel-caption hidden md:block absolute text-center">
-        <h5 className="text-xl text-sky-900 italic">Leotards</h5>
-        <p>Add excelence to your performance</p>
+        <h5 className="text-xl text-sky-900 italic"></h5>
+        <p></p>
       </div>
     </div>
   </div>

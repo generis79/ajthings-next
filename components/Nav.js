@@ -56,9 +56,45 @@ const nav = () => {
     <li className="nav-item p-2">
        <Link className="nav-link text-sky-700 hover:text-sky-800 focus:text-gray-700 p-0" href="/">AJ Things</Link> 
     </li>
-    <li className="nav-item p-2">
-       <Link className="nav-link text-sky-700 hover:text-sky-700 focus:text-gray-700 p-0" href="/products">Products</Link> 
-    </li>
+
+    <li className="nav-item dropdown static">
+          <a className="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out dropdown-toggle flex items-center whitespace-nowrap" href="#" data-mdb-ripple="true" data-mdb-ripple-color="light" type="button" id="dropdownMenuButtonX" data-bs-toggle="dropdown"
+          aria-expanded="false">Collections
+            <svg  aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" className="w-2 ml-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+              <path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path>
+            </svg>
+          </a>
+          <div className="dropdown-menu w-full mt-0 hidden shadow-lg bg-white absolute left-0 top-full" aria-labelledby="dropdownMenuButtonX">
+            <div className="px-6 lg:px-8 py-5">
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="bg-white text-gray-600">
+                  <Link href="/collections/acrylic_key_chains"> 
+                    <a aria-current="true" className="block px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">Acrylic key chains</a>
+                  </Link>
+                  <Link href="/collections/clay_beads_bracelets"> 
+                    <a aria-current="true" className="block px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">Clay beads bracelets</a>
+                  </Link>
+                  <Link href="/collections/leather_key_chains"> 
+                    <a aria-current="true" className="block px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">Leather key chains</a>
+                  </Link>
+                </div>
+                <div className="bg-white text-gray-600">
+                  <Link href="/collections/scrunchies"> 
+                    <a aria-current="true" className="block px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">Scrunchies</a>
+                  </Link>
+                  <Link href="/collections/stickers"> 
+                    <a aria-current="true" className="block px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">Stickers</a>
+                  </Link>
+                  <Link href="/collections/wristles"> 
+                    <a aria-current="true" className="block px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">Wristles</a>
+                  </Link>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </li>
+
     <li className="nav-item p-2">
        <Link className="nav-link text-sky-700 hover:text-sky-700 focus:text-gray-700 p-0" href="/blog">Blog</Link> 
     </li>
