@@ -1,11 +1,11 @@
 ---
 id: 'scr_18'
-name: 'Scrunchie 18'
+name: 'scrunchie 18'
 oldPrice: '10.00$'
 newPrice: '8.00$'
 size: 'L'
 colour: 'Red'
 excerpt: 'product description'
-cover_image: '/img/products/scrunchies/scr_18.jpg'
+cover_image: '/img/products/scrunchies/scr_18.webp'
 ---
 full product description
