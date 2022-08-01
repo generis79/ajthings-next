@@ -5,7 +5,7 @@ import React from 'react'
 import CollectionProducts from "../../components/CollectionProducts";
 import Header from "../../components/Header";
 
-const lkc = ({ products }) => {
+const lkc = ({ products, onAdd }) => {
   return (
     <div>
           <h2 className="font-medium leading-tight text-4xl p-10 mt-20 mb-0 text-gray-700 bg-white text-center font-Caveat">
@@ -16,7 +16,7 @@ const lkc = ({ products }) => {
 
             </div>
          </h2>
-      <CollectionProducts products={products} />
+      <CollectionProducts products={products} onAdd={onAdd}/>
     </div>
   )
 }

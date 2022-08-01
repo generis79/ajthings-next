@@ -1,5 +1,5 @@
 ---
-id: 'scr_4'
+id: 'wri_4'
 name: 'wristle 4'
 oldPrice: '10.00$'
 newPrice: '8.00$'

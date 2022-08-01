@@ -12,7 +12,7 @@ import "tw-elements";
 export default function Home({ collections }) {
   return (
     <div>
-      <Head>AJ things</Head>
+      <Head>AJ Vibe</Head>
       <meta name="keywords" content="portfolio, retail" />
 
       <Header />

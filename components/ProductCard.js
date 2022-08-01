@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link"
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product,onAdd }) => {
   //console.log({product})
   return (
     <div className="flex justify-center m-2">
@@ -24,6 +24,7 @@ const ProductCard = ({ product }) => {
 
         <Link href="#!">
             <button
+              onClick={()=> onAdd(product)}
               type="button"
               className=" inline-block 
                                           border-solid border-2 

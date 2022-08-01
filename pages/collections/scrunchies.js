@@ -5,7 +5,7 @@ import React from 'react'
 import CollectionProducts from "../../components/CollectionProducts";
 import Header from "../../components/Header";
 
-const scr = ({ products }) => {
+const scr = ({ products, onAdd }) => {
   return (
     <div>
           <h2 className="font-medium leading-tight text-4xl p-10 mt-20 mb-0 text-gray-700 bg-white text-center font-Caveat">
@@ -16,7 +16,7 @@ const scr = ({ products }) => {
 
             </div>
          </h2>
-      <CollectionProducts products={products} />
+      <CollectionProducts products={products} onAdd={onAdd}/>
     </div>
   )
 }
@@ -25,6 +25,7 @@ export default scr
 
 export async function getStaticProps() {
   // get files from collections dir
+  //console.log('read data')
   const files = fs.readdirSync(path.join("products/scrunchies"));
 
   // get slug from frontmatter
